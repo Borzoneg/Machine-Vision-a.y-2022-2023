@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/rovi2022/Programs/RobWork/RobWork/src",
+                "/home/rovi2022/Programs/RobWork/RobWorkStudio/src",
+                "/usr/include/eigen3",
+                "/usr/include/x86_64-linux-gnu/qt6/**",
+                "/usr/include/x86_64-linux-gnu/qt6/QtCharts",
+                "/usr/include/opencv4",
+                "/usr/local/include/pcl-1.12/pcl",
+                "/usr/local/include/pcl-1.12",
+                "/usr/include/eigen3"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
