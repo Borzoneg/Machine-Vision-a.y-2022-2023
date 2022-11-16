@@ -1,0 +1,4 @@
+/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/exercise_03.dir
+/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/exercise_04.dir
+/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/edit_cache.dir
+/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/rebuild_cache.dir

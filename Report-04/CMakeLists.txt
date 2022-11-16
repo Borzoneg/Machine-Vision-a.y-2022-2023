@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project( Report-04 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Report-04 main.cpp )
+add_executable( Lite-04 Report-04.cpp )
+target_link_libraries( Report-04 ${OpenCV_LIBS} )
+target_link_libraries( Lite-04 ${OpenCV_LIBS} )
