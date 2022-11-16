@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/rovi2022/Documents/Machine-Vision/Reports/Report-01/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/Report01.dir/main.cpp.o -c /home/rovi2022/Documents/Machine-Vision/Reports/Report-01/main.cpp",
+  "file": "/home/rovi2022/Documents/Machine-Vision/Reports/Report-01/main.cpp"
+}
+]

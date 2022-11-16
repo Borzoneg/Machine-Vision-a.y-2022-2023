@@ -1,0 +1,7 @@
+Answer a:
+To calculate the homography between two images we have to know at least four corresponding points between them. 
+Using SIFT features we can find those four points in the form of four beans
+
+Answer b:
+You can use basic computation, 
+we know that when we have homography we can then pass to a image simply multiplying the point f by H to get the point in g
