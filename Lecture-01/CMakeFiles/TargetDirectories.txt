@@ -1,3 +1,0 @@
-/home/rovi2022/Documents/Machine-Vision/Exercises/Lecture 1/CMakeFiles/DisplayImage.dir
-/home/rovi2022/Documents/Machine-Vision/Exercises/Lecture 1/CMakeFiles/edit_cache.dir
-/home/rovi2022/Documents/Machine-Vision/Exercises/Lecture 1/CMakeFiles/rebuild_cache.dir

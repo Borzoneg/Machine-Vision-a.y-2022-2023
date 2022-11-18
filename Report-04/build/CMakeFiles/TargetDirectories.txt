@@ -1,4 +1,0 @@
-/home/rovi2022/Documents/Machine-Vision/Reports/Report-04/build/CMakeFiles/Report-04.dir
-/home/rovi2022/Documents/Machine-Vision/Reports/Report-04/build/CMakeFiles/Lite-04.dir
-/home/rovi2022/Documents/Machine-Vision/Reports/Report-04/build/CMakeFiles/edit_cache.dir
-/home/rovi2022/Documents/Machine-Vision/Reports/Report-04/build/CMakeFiles/rebuild_cache.dir
