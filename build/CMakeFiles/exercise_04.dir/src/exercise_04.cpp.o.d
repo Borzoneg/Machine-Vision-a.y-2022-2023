@@ -1,5 +1,5 @@
 CMakeFiles/exercise_04.dir/src/exercise_04.cpp.o: \
- /home/rovi2022/Documents/Machine-Vision/Exercises/src/exercise_04.cpp \
+ /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/src/exercise_04.cpp \
  /usr/include/stdc-predef.h /usr/include/opencv4/opencv2/core/core.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \

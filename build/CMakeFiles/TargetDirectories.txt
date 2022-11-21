@@ -1,4 +1,7 @@
-/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/exercise_03.dir
-/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/exercise_04.dir
-/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/edit_cache.dir
-/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles/rebuild_cache.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_01.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_02.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_03.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_04.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_05.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/edit_cache.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/rebuild_cache.dir

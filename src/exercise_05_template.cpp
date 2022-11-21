@@ -5,24 +5,33 @@
 #include <opencv2/imgproc.hpp>
 
 int main(int argc, char **argv) {
-
+  
   (void)argc;
   (void)argv;
 
   std::vector<cv::String> fileNames;
-  cv::glob("../calibrationImages/Image*.png", fileNames, false);
+  cv::glob("../imgs/exercise_05_calibrationImages/Image*.png", fileNames, false);
 
   cv::Size patternSize(25 - 1, 18 - 1);
   std::vector<std::vector<cv::Point2f>> q(fileNames.size());
 
   // Detect feature points
   std::size_t i = 0;
+  std::vector<cv::Point2f> corners; //this will be filled by the detected corners
+
+  cv::TermCriteria termcrit(cv::TermCriteria::COUNT|cv::TermCriteria::EPS,20,0.03);
+  cv::Mat img = cv::imread("../imgs/chessboard.jpg");
+
   for (auto const &f : fileNames) {
     std::cout << std::string(f) << std::endl;
-
+    
     // 1. Read in the image an call cv::findChessboardCorners()
-
+    cv::findChessboardCorners(img, cv::Size(8,8), corners);
     // 2. Use cv::cornerSubPix() to refine the found corner detections
+    cv::cornerSubPix(img, corners, patternSize, cv::Size(-1, -1), termcrit);      
+
+    
+
 
     // Display
     cv::drawChessboardCorners(img, patternSize, q[i], success);

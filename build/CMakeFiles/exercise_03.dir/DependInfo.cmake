@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rovi2022/Documents/Machine-Vision/Exercises/src/exercise_03.cpp" "CMakeFiles/exercise_03.dir/src/exercise_03.cpp.o" "gcc" "CMakeFiles/exercise_03.dir/src/exercise_03.cpp.o.d"
+  "/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/src/exercise_03.cpp" "CMakeFiles/exercise_03.dir/src/exercise_03.cpp.o" "gcc" "CMakeFiles/exercise_03.dir/src/exercise_03.cpp.o.d"
   )
 
 # Targets to which this target links.

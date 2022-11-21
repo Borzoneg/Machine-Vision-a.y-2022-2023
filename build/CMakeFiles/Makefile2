@@ -54,17 +54,20 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rovi2022/Documents/Machine-Vision/Exercises
+CMAKE_SOURCE_DIR = /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rovi2022/Documents/Machine-Vision/Exercises/build
+CMAKE_BINARY_DIR = /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/exercise_01.dir/all
+all: CMakeFiles/exercise_02.dir/all
 all: CMakeFiles/exercise_03.dir/all
 all: CMakeFiles/exercise_04.dir/all
+all: CMakeFiles/exercise_05.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,9 +75,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/exercise_01.dir/clean
+clean: CMakeFiles/exercise_02.dir/clean
 clean: CMakeFiles/exercise_03.dir/clean
 clean: CMakeFiles/exercise_04.dir/clean
+clean: CMakeFiles/exercise_05.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exercise_01.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_01.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles --progress-num=1,2 "Built target exercise_01"
+.PHONY : CMakeFiles/exercise_01.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exercise_01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_01.dir/rule
+
+# Convenience name for target.
+exercise_01: CMakeFiles/exercise_01.dir/rule
+.PHONY : exercise_01
+
+# clean rule for target.
+CMakeFiles/exercise_01.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/clean
+.PHONY : CMakeFiles/exercise_01.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exercise_02.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_02.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles --progress-num=3,4 "Built target exercise_02"
+.PHONY : CMakeFiles/exercise_02.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_02.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exercise_02.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_02.dir/rule
+
+# Convenience name for target.
+exercise_02: CMakeFiles/exercise_02.dir/rule
+.PHONY : exercise_02
+
+# clean rule for target.
+CMakeFiles/exercise_02.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/clean
+.PHONY : CMakeFiles/exercise_02.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/exercise_03.dir
@@ -83,14 +141,14 @@ clean: CMakeFiles/exercise_04.dir/clean
 CMakeFiles/exercise_03.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_03.dir/build.make CMakeFiles/exercise_03.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_03.dir/build.make CMakeFiles/exercise_03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles --progress-num=1,2 "Built target exercise_03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles --progress-num=5,6 "Built target exercise_03"
 .PHONY : CMakeFiles/exercise_03.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exercise_03.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exercise_03.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
 .PHONY : CMakeFiles/exercise_03.dir/rule
 
 # Convenience name for target.
@@ -109,14 +167,14 @@ CMakeFiles/exercise_03.dir/clean:
 CMakeFiles/exercise_04.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_04.dir/build.make CMakeFiles/exercise_04.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_04.dir/build.make CMakeFiles/exercise_04.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles --progress-num=3,4 "Built target exercise_04"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles --progress-num=7,8 "Built target exercise_04"
 .PHONY : CMakeFiles/exercise_04.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exercise_04.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exercise_04.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
 .PHONY : CMakeFiles/exercise_04.dir/rule
 
 # Convenience name for target.
@@ -127,6 +185,32 @@ exercise_04: CMakeFiles/exercise_04.dir/rule
 CMakeFiles/exercise_04.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_04.dir/build.make CMakeFiles/exercise_04.dir/clean
 .PHONY : CMakeFiles/exercise_04.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/exercise_05.dir
+
+# All Build rule for target.
+CMakeFiles/exercise_05.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles --progress-num=9,10 "Built target exercise_05"
+.PHONY : CMakeFiles/exercise_05.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/exercise_05.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exercise_05.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
+.PHONY : CMakeFiles/exercise_05.dir/rule
+
+# Convenience name for target.
+exercise_05: CMakeFiles/exercise_05.dir/rule
+.PHONY : exercise_05
+
+# clean rule for target.
+CMakeFiles/exercise_05.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/clean
+.PHONY : CMakeFiles/exercise_05.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

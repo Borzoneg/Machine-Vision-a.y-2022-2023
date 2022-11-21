@@ -1,4 +1,4 @@
-# Install script for directory: /home/rovi2022/Documents/Machine-Vision/Exercises
+# Install script for directory: /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rovi2022/Documents/Machine-Vision/Exercises/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

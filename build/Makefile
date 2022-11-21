@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rovi2022/Documents/Machine-Vision/Exercises
+CMAKE_SOURCE_DIR = /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rovi2022/Documents/Machine-Vision/Exercises/build
+CMAKE_BINARY_DIR = /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles /home/rovi2022/Documents/Machine-Vision/Exercises/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision/Exercises/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exercise_01
+
+# Build rule for target.
+exercise_01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_01
+.PHONY : exercise_01
+
+# fast build rule for target.
+exercise_01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/build
+.PHONY : exercise_01/fast
+
+#=============================================================================
+# Target rules for targets named exercise_02
+
+# Build rule for target.
+exercise_02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_02
+.PHONY : exercise_02
+
+# fast build rule for target.
+exercise_02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/build
+.PHONY : exercise_02/fast
+
+#=============================================================================
 # Target rules for targets named exercise_03
 
 # Build rule for target.
@@ -141,6 +167,67 @@ exercise_04: cmake_check_build_system
 exercise_04/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_04.dir/build.make CMakeFiles/exercise_04.dir/build
 .PHONY : exercise_04/fast
+
+#=============================================================================
+# Target rules for targets named exercise_05
+
+# Build rule for target.
+exercise_05: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_05
+.PHONY : exercise_05
+
+# fast build rule for target.
+exercise_05/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/build
+.PHONY : exercise_05/fast
+
+src/exercise_01.o: src/exercise_01.cpp.o
+.PHONY : src/exercise_01.o
+
+# target to build an object file
+src/exercise_01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/src/exercise_01.cpp.o
+.PHONY : src/exercise_01.cpp.o
+
+src/exercise_01.i: src/exercise_01.cpp.i
+.PHONY : src/exercise_01.i
+
+# target to preprocess a source file
+src/exercise_01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/src/exercise_01.cpp.i
+.PHONY : src/exercise_01.cpp.i
+
+src/exercise_01.s: src/exercise_01.cpp.s
+.PHONY : src/exercise_01.s
+
+# target to generate assembly for a file
+src/exercise_01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_01.dir/build.make CMakeFiles/exercise_01.dir/src/exercise_01.cpp.s
+.PHONY : src/exercise_01.cpp.s
+
+src/exercise_02.o: src/exercise_02.cpp.o
+.PHONY : src/exercise_02.o
+
+# target to build an object file
+src/exercise_02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/src/exercise_02.cpp.o
+.PHONY : src/exercise_02.cpp.o
+
+src/exercise_02.i: src/exercise_02.cpp.i
+.PHONY : src/exercise_02.i
+
+# target to preprocess a source file
+src/exercise_02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/src/exercise_02.cpp.i
+.PHONY : src/exercise_02.cpp.i
+
+src/exercise_02.s: src/exercise_02.cpp.s
+.PHONY : src/exercise_02.s
+
+# target to generate assembly for a file
+src/exercise_02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_02.dir/build.make CMakeFiles/exercise_02.dir/src/exercise_02.cpp.s
+.PHONY : src/exercise_02.cpp.s
 
 src/exercise_03.o: src/exercise_03.cpp.o
 .PHONY : src/exercise_03.o
@@ -190,6 +277,30 @@ src/exercise_04.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_04.dir/build.make CMakeFiles/exercise_04.dir/src/exercise_04.cpp.s
 .PHONY : src/exercise_04.cpp.s
 
+src/exercise_05.o: src/exercise_05.cpp.o
+.PHONY : src/exercise_05.o
+
+# target to build an object file
+src/exercise_05.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/src/exercise_05.cpp.o
+.PHONY : src/exercise_05.cpp.o
+
+src/exercise_05.i: src/exercise_05.cpp.i
+.PHONY : src/exercise_05.i
+
+# target to preprocess a source file
+src/exercise_05.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/src/exercise_05.cpp.i
+.PHONY : src/exercise_05.cpp.i
+
+src/exercise_05.s: src/exercise_05.cpp.s
+.PHONY : src/exercise_05.s
+
+# target to generate assembly for a file
+src/exercise_05.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_05.dir/build.make CMakeFiles/exercise_05.dir/src/exercise_05.cpp.s
+.PHONY : src/exercise_05.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,14 +309,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... exercise_01"
+	@echo "... exercise_02"
 	@echo "... exercise_03"
 	@echo "... exercise_04"
+	@echo "... exercise_05"
+	@echo "... src/exercise_01.o"
+	@echo "... src/exercise_01.i"
+	@echo "... src/exercise_01.s"
+	@echo "... src/exercise_02.o"
+	@echo "... src/exercise_02.i"
+	@echo "... src/exercise_02.s"
 	@echo "... src/exercise_03.o"
 	@echo "... src/exercise_03.i"
 	@echo "... src/exercise_03.s"
 	@echo "... src/exercise_04.o"
 	@echo "... src/exercise_04.i"
 	@echo "... src/exercise_04.s"
+	@echo "... src/exercise_05.o"
+	@echo "... src/exercise_05.i"
+	@echo "... src/exercise_05.s"
 .PHONY : help
 
 
