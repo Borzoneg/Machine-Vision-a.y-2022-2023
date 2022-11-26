@@ -74,12 +74,12 @@ int main(int argc, char **argv) {
 	}
 
 	cv::imshow("Image", img); 
-	/*cv::imshow("AppliedH", appliedH);
+	cv::imshow("AppliedH", appliedH);
 	cv::imshow("AppliedV", appliedV);
 	cv::imshow("Applied both in wrong way", appliedBothKo);
 	cv::imshow("Image filtered", filtered); 
 	cv::imshow("Applied both properly", appliedBothOk.gradientStrengthMap);
-	cv::imshow("Applied canny", appliedCanny);*/
+	cv::imshow("Applied canny", appliedCanny);
 	cv::imshow("Applied Hough", houghLines);	
 	
 	cv::waitKey(0);
