@@ -57,23 +57,21 @@ int main(int argc, char **argv) {
 	cv::Mat appliedCanny = img.clone();
 	double lowTreshold = 0, ratio = 3;
 	cv::Canny(img, appliedCanny, lowTreshold, lowTreshold*ratio);
-
-	cv::Mat cdst;
-	cvtColor(appliedCanny, cdst, cv::COLOR_GRAY2BGR);
-	std::vector<cv::Vec2f> lines; // will hold the results of the detection
-    HoughLines(appliedCanny, lines, 1, CV_PI/180, 150, 0, 0 ); // runs the actual detection
-    // Draw the lines
-    for(int i=0; i<lines.size(); i++){
-        float rho = lines[i][0], theta = lines[i][1];
-        cv::Point pt1, pt2;
-        double a = cos(theta), b = sin(theta);
-        double x0 = a*rho, y0 = b*rho;
-        pt1.x = cvRound(x0 + 1000*(-b));
-        pt1.y = cvRound(y0 + 1000*(a));
-        pt2.x = cvRound(x0 - 1000*(-b));
-        pt2.y = cvRound(y0 - 1000*(a));
-        cv::line(cdst, pt1, pt2, cv::Scalar(0,0,255), 3, cv::LINE_AA);
-    }
+	
+	std::vector<cv::Vec3f> circles; // will hold the results of the detection
+	cv::Mat houghLines;
+	
+	houghLines = img.clone();
+	cv::HoughCircles(filtered, circles, cv::HOUGH_GRADIENT, 1, 40, 100, 30, 1, 50);
+	for( size_t i = 0; i < circles.size(); i++ ){
+		cv::Vec3i c = circles[i];
+		cv::Point center = cv::Point(c[0], c[1]);
+		// circle center
+		cv::circle(houghLines, center, 1, cv::Scalar(0,100,100), 3, cv::LINE_AA);
+		// circle outline
+		int radius = c[2];
+		circle(houghLines, center, radius, cv::Scalar(255,0,255), 3, cv::LINE_AA);
+	}
 
 	cv::imshow("Image", img); 
 	/*cv::imshow("AppliedH", appliedH);
@@ -82,7 +80,7 @@ int main(int argc, char **argv) {
 	cv::imshow("Image filtered", filtered); 
 	cv::imshow("Applied both properly", appliedBothOk.gradientStrengthMap);
 	cv::imshow("Applied canny", appliedCanny);*/
-	cv::imshow("Applied Hough", cdst);	
+	cv::imshow("Applied Hough", houghLines);	
 	
 	cv::waitKey(0);
 	return 0;
