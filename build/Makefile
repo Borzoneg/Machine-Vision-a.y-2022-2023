@@ -194,6 +194,19 @@ exercise_06/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_06.dir/build.make CMakeFiles/exercise_06.dir/build
 .PHONY : exercise_06/fast
 
+#=============================================================================
+# Target rules for targets named exercise_11
+
+# Build rule for target.
+exercise_11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_11
+.PHONY : exercise_11
+
+# fast build rule for target.
+exercise_11/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/build
+.PHONY : exercise_11/fast
+
 src/exercise_01.o: src/exercise_01.cpp.o
 .PHONY : src/exercise_01.o
 
@@ -338,6 +351,30 @@ src/exercise_06.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_06.dir/build.make CMakeFiles/exercise_06.dir/src/exercise_06.cpp.s
 .PHONY : src/exercise_06.cpp.s
 
+src/exercise_11.o: src/exercise_11.cpp.o
+.PHONY : src/exercise_11.o
+
+# target to build an object file
+src/exercise_11.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/src/exercise_11.cpp.o
+.PHONY : src/exercise_11.cpp.o
+
+src/exercise_11.i: src/exercise_11.cpp.i
+.PHONY : src/exercise_11.i
+
+# target to preprocess a source file
+src/exercise_11.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/src/exercise_11.cpp.i
+.PHONY : src/exercise_11.cpp.i
+
+src/exercise_11.s: src/exercise_11.cpp.s
+.PHONY : src/exercise_11.s
+
+# target to generate assembly for a file
+src/exercise_11.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/src/exercise_11.cpp.s
+.PHONY : src/exercise_11.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -352,6 +389,7 @@ help:
 	@echo "... exercise_04"
 	@echo "... exercise_05"
 	@echo "... exercise_06"
+	@echo "... exercise_11"
 	@echo "... src/exercise_01.o"
 	@echo "... src/exercise_01.i"
 	@echo "... src/exercise_01.s"
@@ -370,6 +408,9 @@ help:
 	@echo "... src/exercise_06.o"
 	@echo "... src/exercise_06.i"
 	@echo "... src/exercise_06.s"
+	@echo "... src/exercise_11.o"
+	@echo "... src/exercise_11.i"
+	@echo "... src/exercise_11.s"
 .PHONY : help
 
 
