@@ -47,7 +47,6 @@ int main(int argc, char **argv) {
     cv::imshow("Image", img);
     cv::imshow("Amplitude", amplitude);
     cv::imshow("Phase", phase);
-    cv::waitKey(0);
     
     img = rotate(-10, img);
     cv::imshow("Image rotated", img);
