@@ -195,6 +195,19 @@ exercise_06/fast:
 .PHONY : exercise_06/fast
 
 #=============================================================================
+# Target rules for targets named exercise_07
+
+# Build rule for target.
+exercise_07: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_07
+.PHONY : exercise_07
+
+# fast build rule for target.
+exercise_07/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_07.dir/build.make CMakeFiles/exercise_07.dir/build
+.PHONY : exercise_07/fast
+
+#=============================================================================
 # Target rules for targets named exercise_11
 
 # Build rule for target.
@@ -351,6 +364,30 @@ src/exercise_06.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_06.dir/build.make CMakeFiles/exercise_06.dir/src/exercise_06.cpp.s
 .PHONY : src/exercise_06.cpp.s
 
+src/exercise_07.o: src/exercise_07.cpp.o
+.PHONY : src/exercise_07.o
+
+# target to build an object file
+src/exercise_07.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_07.dir/build.make CMakeFiles/exercise_07.dir/src/exercise_07.cpp.o
+.PHONY : src/exercise_07.cpp.o
+
+src/exercise_07.i: src/exercise_07.cpp.i
+.PHONY : src/exercise_07.i
+
+# target to preprocess a source file
+src/exercise_07.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_07.dir/build.make CMakeFiles/exercise_07.dir/src/exercise_07.cpp.i
+.PHONY : src/exercise_07.cpp.i
+
+src/exercise_07.s: src/exercise_07.cpp.s
+.PHONY : src/exercise_07.s
+
+# target to generate assembly for a file
+src/exercise_07.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_07.dir/build.make CMakeFiles/exercise_07.dir/src/exercise_07.cpp.s
+.PHONY : src/exercise_07.cpp.s
+
 src/exercise_11.o: src/exercise_11.cpp.o
 .PHONY : src/exercise_11.o
 
@@ -389,6 +426,7 @@ help:
 	@echo "... exercise_04"
 	@echo "... exercise_05"
 	@echo "... exercise_06"
+	@echo "... exercise_07"
 	@echo "... exercise_11"
 	@echo "... src/exercise_01.o"
 	@echo "... src/exercise_01.i"
@@ -408,6 +446,9 @@ help:
 	@echo "... src/exercise_06.o"
 	@echo "... src/exercise_06.i"
 	@echo "... src/exercise_06.s"
+	@echo "... src/exercise_07.o"
+	@echo "... src/exercise_07.i"
+	@echo "... src/exercise_07.s"
 	@echo "... src/exercise_11.o"
 	@echo "... src/exercise_11.i"
 	@echo "... src/exercise_11.s"
