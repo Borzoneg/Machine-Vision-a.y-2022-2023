@@ -5,6 +5,7 @@
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_05.dir
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_06.dir
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_07.dir
+/home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_08.dir
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/exercise_11.dir
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/edit_cache.dir
 /home/rovi2022/Documents/Machine-Vision-a.y-2022-2023/build/CMakeFiles/rebuild_cache.dir
