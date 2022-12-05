@@ -26,30 +26,28 @@ int main(int argc, char* argv[]){
 
     //Apply linear filter
     cv::Mat linearOutput;
-    // linearFilter(src, linearKernel, linearOutput);
-    // cv::namedWindow("Linear filter linearOutput");
-    // cv::imshow("Linear filter linearOutput",linearOutput);
-
+    linearFilter(src, linearKernel, linearOutput);
+    cv::namedWindow("Linear filter linearOutput");
+    cv::imshow("Linear filter linearOutput",linearOutput);
+    cv::waitKey();
+    cv::Mat customKernel = (cv::Mat_<float>(3,3) << 1,2,3,4,5,6,7,8,9);
+    cv::Mat impulse = cv::Mat::zeros(5,5,CV_8UC1);
+    impulse.at<uchar>(2,2) = 1;
+    cv::Mat impulseOutput;
+    linearFilter(impulse, customKernel, impulseOutput);
+    std::cout<<impulseOutput<<"\n";
+    /*
     //Create cross kernel with 1
     cv::Mat medianKernel = (cv::Mat_<float>(3,3) << 0,1,0,1,1,1,0,1,0);
     CV_Assert(medianKernel.type() == CV_32FC1);
 
     //Apply median filter
-    cv::Mat medianOutput;
+     cv::Mat medianOutput;
     medianFilter(src, medianKernel, medianOutput);
     cv::namedWindow("Median filter medianOutput");
     cv::imshow("Median filter medianOutput",medianOutput);
-
-    cv::Mat medianOutput2;
-    medianFilter(medianOutput, medianKernel, medianOutput2);
-    cv::namedWindow("Median filter medianOutput2");
-    cv::imshow("Median filter medianOutput2",medianOutput2);
-
-    cv::Mat medianOutput3;
-    medianFilter(medianOutput2, medianKernel, medianOutput3);
-    cv::namedWindow("Median filter medianOutput3");
-    cv::imshow("Median filter medianOutput3",medianOutput3);
-    cv::waitKey(0);
+    cv::waitKey(0); 
+    */
     return 0;
 }
 
@@ -65,11 +63,12 @@ void linearFilter(cv::Mat src, cv::Mat k, cv::Mat &output){
         }
     }
 
+    // applying kernel
     for(u=0; u<src.rows; u++){
         for(v=0; v<src.cols; v++){
-            for(i=-1; i<=1; i++){
-                for(j=-1; j<=1; j++){
-                    tmp += padded.at<uchar>(u-i+1, v-j+1) * k.at<float>(i+1, j+1);
+            for(i=-k.rows/2; i<=k.rows/2; i++){
+                for(j=-k.cols/2; j<=k.cols/2; j++){
+                    tmp += padded.at<uchar>(u-i+k.rows/2, v-j+k.cols/2) * k.at<float>(i+k.rows/2, j+k.cols/2);
                 }
             } 
             output.at<uchar>(u, v) = tmp;

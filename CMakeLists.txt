@@ -14,6 +14,7 @@ add_executable(exercise_07 src/exercise_07.cpp)
 add_executable(exercise_08 src/exercise_08.cpp)
 add_executable(exercise_11 src/exercise_11.cpp)
 
+
 target_link_libraries(exercise_01 ${OpenCV_LIBS})
 target_link_libraries(exercise_02 ${OpenCV_LIBS})
 target_link_libraries(exercise_03 ${OpenCV_LIBS})
@@ -23,3 +24,7 @@ target_link_libraries(exercise_06 ${OpenCV_LIBS})
 target_link_libraries(exercise_07 ${OpenCV_LIBS})
 target_link_libraries(exercise_08 ${OpenCV_LIBS})
 target_link_libraries(exercise_11 ${OpenCV_LIBS})
+
+
+add_executable(report_04 src/report_04.cpp)
+target_link_libraries(report_04 ${OpenCV_LIBS})

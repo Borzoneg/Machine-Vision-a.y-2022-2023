@@ -13,7 +13,7 @@ cv::Mat findConnectedComponents(cv:: Mat img);
 
 int main(int argc, char* argv[]){
     cv::Mat img = cv::imread("../imgs/licencePlate1.png", cv::IMREAD_GRAYSCALE);
-/* 
+    
     // there is a bug in the otsu method or in the erosion implemantion
 
     //====================================OTSU Method===================================//
@@ -52,7 +52,7 @@ int main(int argc, char* argv[]){
     cv::erode(otsuImg, erodedImg, kernel);
     cv::imshow("Original tresholded image", otsuImg);
     cv::imshow("Eroded custom", customErodedImg);
-    cv::imshow("Eroded", erodedImg);  */
+    cv::imshow("Eroded", erodedImg);  
  
     //==============================CONNECTED COMPONENTS==============================//
     // it doesn't works on images because is overflowing the memory allocated for the stack(?)
