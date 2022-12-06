@@ -16,8 +16,8 @@ gradientMap findGradientMap(cv::Mat img);
 cv::Mat applyCanny(cv::Mat, gradientMap);
 
 int main(int argc, char **argv) {
-    cv::Mat img = cv::imread("../imgs/legoHouse.jpg", cv::IMREAD_GRAYSCALE);
-	//cv::Mat img = cv::imread("../imgs/test_gaussian.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat img = cv::imread("../inputFiles/imgs/legoHouse.jpg", cv::IMREAD_GRAYSCALE);
+	//cv::Mat img = cv::imread("../inputFiles/imgs/test_gaussian.png", cv::IMREAD_GRAYSCALE);
 	cv::Mat sobelHorizontalKernel = (cv::Mat_<float>(3,3) <<  1.0,  2.0,  1.0,
 															  0.0,  0.0,  0.0,
 															 -1.0, -2.0, -1.0);

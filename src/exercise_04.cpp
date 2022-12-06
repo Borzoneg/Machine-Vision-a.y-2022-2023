@@ -12,7 +12,7 @@ cv::Mat erodeImg(cv:: Mat img, cv::Mat kernel);
 cv::Mat findConnectedComponents(cv:: Mat img);
 
 int main(int argc, char* argv[]){
-    cv::Mat img = cv::imread("../imgs/licencePlate1.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat img = cv::imread("../inputFiles/imgs/licencePlate1.png", cv::IMREAD_GRAYSCALE);
     
     // there is a bug in the otsu method or in the erosion implemantion
 

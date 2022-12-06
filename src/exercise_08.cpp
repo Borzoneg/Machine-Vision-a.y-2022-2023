@@ -26,7 +26,7 @@ int main(int argc, char** argv){
     std::vector<cv::Vec4i > hierarchy; //Not used in this example
 
     for(i=1; i<10; i++){
-        img = cv::imread("../imgs/numbers/" + std::to_string(i) + ".png", CV_8UC1);
+        img = cv::imread("../inputFiles/imgs/numbers/" + std::to_string(i) + ".png", CV_8UC1);
         cv::findContours(img, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE); // find every contours in each img
         for(auto contour : contours){ // for each contour found
             perimeter = cv::arcLength(contour, true); // find perimeter
@@ -75,7 +75,7 @@ int main(int argc, char** argv){
     bayesClassifier->train(trainData, cv::ml::ROW_SAMPLE, labels); // and train it
 
     // repeat the previous step on the test data, extract the feature and construct a dataset with them
-     cv::Mat imgTest = cv::imread("../imgs/testSudoku.png", CV_8UC1);
+     cv::Mat imgTest = cv::imread("../inputFiles/imgs/testSudoku.png", CV_8UC1);
     // cv::Mat imgTest = cv::imread("../img/handwroteNumbers.png", CV_8UC1); // the image hsa to "cleaner" to get some result
     cv::findContours(imgTest, contours, hierarchy, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
     cv::Mat testData(contours.size(), nFeatures, CV_32FC1);

@@ -9,7 +9,7 @@ void showHist(cv::Mat grayImage, std::string namedWindow);
 
 int main(int argc, char* argv[]){
     int i, j, valuableBean = 0;
-    cv::Mat img = cv::imread("../imgs/TrinityCampanile3.jpg", cv::IMREAD_GRAYSCALE);
+    cv::Mat img = cv::imread("../inputFiles/imgs/TrinityCampanile3.jpg", cv::IMREAD_GRAYSCALE);
     cv::imshow("img", img);
     showHist(img, "img histogram");
     std::vector<float> repetition(255, 0.0);

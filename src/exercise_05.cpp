@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv) {
 	std::vector<cv::String> fileNames;
-	cv::glob("../imgs/exercise_05_calibrationImages/Image*.png", fileNames, false);
+	cv::glob("../inputFiles/imgs/exercise_05_calibrationImages/Image*.png", fileNames, false);
 	
     //cv::Size patternSize(cellInRow - 1, cellInRow - 1);
     cv::Size patternSize(25 - 1, 18 - 1);

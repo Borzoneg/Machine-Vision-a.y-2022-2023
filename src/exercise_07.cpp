@@ -7,8 +7,8 @@
 
 
 int main(int argc, char **argv) {
-    cv::Mat boxInScene = cv::imread("../imgs/box_in_scene.png", cv::IMREAD_GRAYSCALE);
-    cv::Mat box = cv::imread("../imgs/box.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat boxInScene = cv::imread("../inputFiles/imgs/box_in_scene.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat box = cv::imread("../inputFiles/imgs/box.png", cv::IMREAD_GRAYSCALE);
 
     cv::Ptr<cv::AKAZE> detector = cv::AKAZE::create();
 

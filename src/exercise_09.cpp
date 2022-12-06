@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-    cv::Mat img = cv::imread("../imgs/obama.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat img = cv::imread("../inputFiles/imgs/obama.png", cv::IMREAD_GRAYSCALE);
     std::vector<cv::Rect> faces;
     cv::equalizeHist(img, img); // normalization of image
     cv::CascadeClassifier face_classifier, eyes_classifier;

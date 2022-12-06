@@ -10,7 +10,7 @@ cv::Mat rotate(double angle, cv::Mat toRotate);
 
 
 int main(int argc, char **argv) {
-    cv::Mat img = cv::imread("../imgs/rotatedText.png", cv::IMREAD_GRAYSCALE);
+    cv::Mat img = cv::imread("../inputFiles/imgs/rotatedText.png", cv::IMREAD_GRAYSCALE);
     
     cv::Mat padded;
     int m = cv::getOptimalDFTSize(img.rows);
