@@ -221,6 +221,19 @@ exercise_08/fast:
 .PHONY : exercise_08/fast
 
 #=============================================================================
+# Target rules for targets named exercise_09
+
+# Build rule for target.
+exercise_09: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exercise_09
+.PHONY : exercise_09
+
+# fast build rule for target.
+exercise_09/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_09.dir/build.make CMakeFiles/exercise_09.dir/build
+.PHONY : exercise_09/fast
+
+#=============================================================================
 # Target rules for targets named exercise_11
 
 # Build rule for target.
@@ -232,19 +245,6 @@ exercise_11: cmake_check_build_system
 exercise_11/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/build
 .PHONY : exercise_11/fast
-
-#=============================================================================
-# Target rules for targets named report_04
-
-# Build rule for target.
-report_04: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 report_04
-.PHONY : report_04
-
-# fast build rule for target.
-report_04/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/report_04.dir/build.make CMakeFiles/report_04.dir/build
-.PHONY : report_04/fast
 
 src/exercise_01.o: src/exercise_01.cpp.o
 .PHONY : src/exercise_01.o
@@ -438,6 +438,30 @@ src/exercise_08.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_08.dir/build.make CMakeFiles/exercise_08.dir/src/exercise_08.cpp.s
 .PHONY : src/exercise_08.cpp.s
 
+src/exercise_09.o: src/exercise_09.cpp.o
+.PHONY : src/exercise_09.o
+
+# target to build an object file
+src/exercise_09.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_09.dir/build.make CMakeFiles/exercise_09.dir/src/exercise_09.cpp.o
+.PHONY : src/exercise_09.cpp.o
+
+src/exercise_09.i: src/exercise_09.cpp.i
+.PHONY : src/exercise_09.i
+
+# target to preprocess a source file
+src/exercise_09.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_09.dir/build.make CMakeFiles/exercise_09.dir/src/exercise_09.cpp.i
+.PHONY : src/exercise_09.cpp.i
+
+src/exercise_09.s: src/exercise_09.cpp.s
+.PHONY : src/exercise_09.s
+
+# target to generate assembly for a file
+src/exercise_09.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_09.dir/build.make CMakeFiles/exercise_09.dir/src/exercise_09.cpp.s
+.PHONY : src/exercise_09.cpp.s
+
 src/exercise_11.o: src/exercise_11.cpp.o
 .PHONY : src/exercise_11.o
 
@@ -462,30 +486,6 @@ src/exercise_11.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exercise_11.dir/build.make CMakeFiles/exercise_11.dir/src/exercise_11.cpp.s
 .PHONY : src/exercise_11.cpp.s
 
-src/report_04.o: src/report_04.cpp.o
-.PHONY : src/report_04.o
-
-# target to build an object file
-src/report_04.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/report_04.dir/build.make CMakeFiles/report_04.dir/src/report_04.cpp.o
-.PHONY : src/report_04.cpp.o
-
-src/report_04.i: src/report_04.cpp.i
-.PHONY : src/report_04.i
-
-# target to preprocess a source file
-src/report_04.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/report_04.dir/build.make CMakeFiles/report_04.dir/src/report_04.cpp.i
-.PHONY : src/report_04.cpp.i
-
-src/report_04.s: src/report_04.cpp.s
-.PHONY : src/report_04.s
-
-# target to generate assembly for a file
-src/report_04.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/report_04.dir/build.make CMakeFiles/report_04.dir/src/report_04.cpp.s
-.PHONY : src/report_04.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -502,8 +502,8 @@ help:
 	@echo "... exercise_06"
 	@echo "... exercise_07"
 	@echo "... exercise_08"
+	@echo "... exercise_09"
 	@echo "... exercise_11"
-	@echo "... report_04"
 	@echo "... src/exercise_01.o"
 	@echo "... src/exercise_01.i"
 	@echo "... src/exercise_01.s"
@@ -528,12 +528,12 @@ help:
 	@echo "... src/exercise_08.o"
 	@echo "... src/exercise_08.i"
 	@echo "... src/exercise_08.s"
+	@echo "... src/exercise_09.o"
+	@echo "... src/exercise_09.i"
+	@echo "... src/exercise_09.s"
 	@echo "... src/exercise_11.o"
 	@echo "... src/exercise_11.i"
 	@echo "... src/exercise_11.s"
-	@echo "... src/report_04.o"
-	@echo "... src/report_04.i"
-	@echo "... src/report_04.s"
 .PHONY : help
 
 
