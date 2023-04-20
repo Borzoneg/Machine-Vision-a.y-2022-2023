@@ -16,6 +16,4 @@
 ### Exercise 04:
 
     - From scratch implementation of automatic treshold, morphological operations (erode, dilate), connected components algorithm
-
-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
     
